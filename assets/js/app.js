@@ -97,7 +97,7 @@
         const makeId = function() {return Math.random().toString().replace('0.', '')};
         let ret = makeId();
         // while ret (the new id) is found to already exist
-        // call doGen to make a new id and check if it exits
+        // call makeId to make a new id and check if it already exits
         while (ids && ids.includes(ret)) { ret = makeId()}
 
         // once new id is confirmed to be unique, return it
